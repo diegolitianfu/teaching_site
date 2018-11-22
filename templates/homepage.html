@@ -1,0 +1,67 @@
+{% load static from staticfiles %}
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+
+    <meta charset="UTF-8">
+    <title>现代检测技术</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="main_bg">
+        <div class="header">
+            <a href="{% url 'home' %}"><img src="{% static 'header.jpg' %}"> </a>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#home">首页</a></li>
+                <li><a href="#idea">教学理念</a></li>
+                <li><a href="#team">教学队伍</a></li>
+                <li><a href="#special">教学安排</a></li>
+                <li><a href="#content">教学内容</a></li>
+                <li><a href="#resources">教学资源</a></li>
+                <li><a href="#avtivities">学习活动</a></li>
+                <li><a href="#content">教学内容</a></li>
+                <li><a href="#application-form">申请表格</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+        </div>
+        <div class="main">
+            <div class="main_right" style="min-height: 450px">
+                <div class="intro_course" style="height: 200px;margin: 20px 20px 0px 20px; ">
+                    <h1 class="title">课程介绍：</h1>
+                    <p class="title_content">《现代检测技术》分为四篇，第一篇介绍检测技术的基本概念；第二篇主要介绍常见的传感器，包括电阻式传感器、电感式传感器、涡流式传感器、电容性传感器、压电式传感器、光电式传感器等，把输出量或原理有共性的传感器归并成一类，既便于学生理解传感器的原理，又便于学生掌握这类传感器可共用的接口电路；第三篇主要介绍温度、压力、流量、物位四种过程参数的测量；第四篇主要介绍无损检测技术。</p>
+                </div>
+                <div class="planning" style="height: 250px">
+                    <div class="box" style="width:330px;float:left;margin:20px;border-top: white dotted 1px ">
+                        <h1 class="title">课程特色：</h1>
+                        <p class="title_content" style="padding-right:10px">内容丰富、新颖，理论联系实际，更突出实际应用，读者可即学即用。本书既可供从事测试技术的科技工作者学习和参考，又可作为高校中各专业测试技术课程的教材和教学参考书</p>
+                    </div>
+                    <div class="box" style="width:300px;float:right;margin:20px;border-top:white dotted 1px">
+                        <h1 class="title">课程安排</h1>
+                        <p class="title_content">blabla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main_left" style="min-height: 450px">
+                <div>
+                    <div class="photo" style="float: right; margin-right:20px ">photo</div>
+                    <div style="padding: 10px">
+                        <h1 class="teacher_name" style="clear:right">任课老师：杨波</h1>
+                        <p class="intro">职称：教授<br>
+                            学位：博士<br>
+                            所在院系：自动化科学与电气工程学院 检测系<br>
+                            研究方向：面向目标侦测的无线传感器网络研究
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p style="background-color: aquamarine">版权所有 @copyright </p>
+        </div>
+    </div>
+</body>
+</html>
