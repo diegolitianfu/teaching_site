@@ -1,11 +1,9 @@
 body {
     background-color: #0f121f;
-    background-image: url("stars.png");
-    background-repeat-y: no-repeat;
     color: #fff;
 }
 .main_bg {
-    width: 1000px;
+    width: 800px;
     margin: 0 auto;
     background-color:rgb(15,18,33);
     position: relative;
@@ -13,48 +11,70 @@ body {
 
 }
 .header {
-    height: 90px;
+    height: 70px;
+    width: 800px;
     background-color: #0f121f;
     background-image: url("stars.png");
 }
 
 .menu {
     height: 41px;
-    background-color: #fff;
-    width: 1000px;
+    width: 800px;
+    margin-left:1px ;
 }
 
-ul {
+.menu-list{
     list-style-type: none;
-    margin: 0;
+    margin-right: 1px;
     padding: 0;
     overflow: hidden;
     background-color: #333333;
 }
 
-li {
+.menu-element{
     float: left;
 }
 
-li a {
+.menu-element a {
     display: block;
     color: white;
     text-align: center;
-    padding: 16px;
+    padding: 14px;
     text-decoration: none;
 }
 
-li a:hover {
+.list{
+    display: block;
+    padding-inline-start: 0px;
+}
+
+.list li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    border-bottom: white dotted 1px;
+}
+
+.list a {
+    display: block;
+    color:rgb(15,18,33);
+    text-decoration: none;
+}
+.list a:hover{
+    background-color:rgb(190,190,190) ;
+}
+.menu-element a:hover {
     background-color: #111111;
 }
 
 .banner {
-    height: 305px;
-    margin-top:11px;
+    height: 268px;
+    width: 796px;
+    margin-top:8px;
     background-color: #0f121f;
     border: #111111 solid 1px;
     border-bottom: white solid 1px;
-    background-image: url("banner.png");
 }
 .main {
     padding-top:0px;
@@ -64,12 +84,12 @@ li a:hover {
     background-color: rgb(180,180,180);
     justify-content: space-around;
 }
-
-.main_left {
-    width: 262px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.linian{
+    font-family: 宋体;
+    font-size:20px;
+    border-bottom: white solid 2px;
+    padding:10px 20px 10px 20px;
+    color: rgb(0, 127, 235);
 }
 .photo{
     width:100px;
@@ -77,14 +97,7 @@ li a:hover {
     background-color: white;
 }
 
-.teacher_name{
-    height: 55px;
-    line-height: 55px;
-    font-size: 20px;
-    font-weight:bold;
-    font-family:微软雅黑;
-    color:rgb(15,18,33);
-}
+
 .intro{
     font-family:宋体;
     font-size:15px;
@@ -92,16 +105,16 @@ li a:hover {
 }
 
 .main_right {
-    width: 738px;
+    width: 740px;
     border-width: 2px;
-    margin: 20px 10px 20px 20px;
+    margin: 20px 20px 20px 20px;
     background: rgb(210,210,210);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction:column;
 }
-.planning{
-}
+
 .box{
     margin: 20px;
 }
@@ -116,6 +129,66 @@ li a:hover {
     font-family: 宋体;
     font-size: 15px;
     color: rgb(15, 18, 33);
+}
+
+.article_content{
+    margin: 20px 30px 20px 30px;
+    font-family: 宋体;
+    font-size: 15px;
+    color: rgb(15, 18, 33);
+}
+
+.left_main{
+    height: auto;
+    width: 170px;
+    background: rgb(210,210,210);
+    margin: 20px 10px 20px 30px;
+}
+.right_main{
+    height: auto;
+    width: 550px;
+    margin: 20px 30px 10px 10px;
+}
+
+.team_member{
+    float: left;
+    width: 400px;
+    font-family: 宋体;
+    font-size: 15px;
+    color: rgb(15, 18, 33);
+    margin-left: 20px;
+}
+
+.team_member li{
+    margin-bottom: 10px;
+}
+
+.member_detail{
+    float: left;
+
+}
+.member_detail li{
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+.down_file{
+    list-style: none;
+    counter-reset: li
+}
+.down_file li{
+    counter-increment: li;
+    margin-bottom: 8px;
+}
+.down_file li:before{
+    content: counter(li);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1.5em;
+    margin-right: 0.5em;
+    text-align: right;
+    direction: rtl;
+    color: black;
 }
 
 

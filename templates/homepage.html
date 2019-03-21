@@ -1,67 +1,27 @@
-{% load static from staticfiles %}
-<!DOCTYPE html>
-<html lang="cn">
-<head>
+{% extends 'layout_base.html'%}
 
-    <meta charset="UTF-8">
-    <title>现代检测技术</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-</head>
-<body>
-    <div class="main_bg">
-        <div class="header">
-            <a href="{% url 'home' %}"><img src="{% static 'header.jpg' %}"> </a>
+{% block content %}
+    <div class="main_right" style="min-height: 450px">
+        <div class="intro_course" style="height: 230px;margin: 30px 40px 10px 40px; ">
+            <h1 class="title">课程介绍：</h1>
+            <p class="title_content">随着现代科学技术的飞速发展，检测技术已经从一般的单参数测量逐渐发展为相关多参数的综合自动检测以及参数的状态估计，受到了日益广泛的关注，在航空航天、国防军事、医疗诊断、环境保护、工业、农业、交通运输等领域并发挥着越来越大的作用。现代检测技术是指采用先进的传感、信息处理、建模与推理等技术实现常规仪表、方法和手段无法直接获取的对待测参数的检测。</p>
+            <p class="title_content">作为自动化学院控制科学与工程方向研究生的一门专业课，《现代检测技术》主要涉及现代检测技术领域的理论基础、先进的感知技术、微弱信号处理、多传感器数据融合以及软测量技术等关键内容，反映了近十年来信息技术、智能算法等在检测系统中的最新应用，对培养研究生运用检测理论、新型传感器及信号分析处理方法解决实际参数测量问题的能力具有十分重要的意义，将为学生未来在本学科领域从事科研工作奠定基础。
+</p>
         </div>
-        <div class="menu">
-            <ul>
-                <li><a href="#home">首页</a></li>
-                <li><a href="#idea">教学理念</a></li>
-                <li><a href="#team">教学队伍</a></li>
-                <li><a href="#special">教学安排</a></li>
-                <li><a href="#content">教学内容</a></li>
-                <li><a href="#resources">教学资源</a></li>
-                <li><a href="#avtivities">学习活动</a></li>
-                <li><a href="#content">教学内容</a></li>
-                <li><a href="#application-form">申请表格</a></li>
-            </ul>
-        </div>
-        <div class="banner">
-        </div>
-        <div class="main">
-            <div class="main_right" style="min-height: 450px">
-                <div class="intro_course" style="height: 200px;margin: 20px 20px 0px 20px; ">
-                    <h1 class="title">课程介绍：</h1>
-                    <p class="title_content">《现代检测技术》分为四篇，第一篇介绍检测技术的基本概念；第二篇主要介绍常见的传感器，包括电阻式传感器、电感式传感器、涡流式传感器、电容性传感器、压电式传感器、光电式传感器等，把输出量或原理有共性的传感器归并成一类，既便于学生理解传感器的原理，又便于学生掌握这类传感器可共用的接口电路；第三篇主要介绍温度、压力、流量、物位四种过程参数的测量；第四篇主要介绍无损检测技术。</p>
-                </div>
-                <div class="planning" style="height: 250px">
-                    <div class="box" style="width:330px;float:left;margin:20px;border-top: white dotted 1px ">
-                        <h1 class="title">课程特色：</h1>
-                        <p class="title_content" style="padding-right:10px">内容丰富、新颖，理论联系实际，更突出实际应用，读者可即学即用。本书既可供从事测试技术的科技工作者学习和参考，又可作为高校中各专业测试技术课程的教材和教学参考书</p>
-                    </div>
-                    <div class="box" style="width:300px;float:right;margin:20px;border-top:white dotted 1px">
-                        <h1 class="title">课程安排</h1>
-                        <p class="title_content">blabla</p>
-                    </div>
-                </div>
+        <div class="planning" style="height: 250px">
+            <div class="box" style="width:330px;float:left;margin:20px 40px 20px 20px;border-top: white dotted 1px ">
+                <h1 class="title">教学理念：</h1>
+                <p class="title_content" style="padding-right:5px">通过本课程学习，应使学生全面了解现代检测技术的特点、现
+                    状和发展趋势，掌握多种新型的检测技术中的传感器感知、信号分析处理及系统集成的设计和分析方法。</p>
+                <div style="text-align: right;margin-right: 20px"><a href="{% url 'idea' %}" style="font-size: 12px"><i>>>>阅读更多</i></a></div>
             </div>
-            <div class="main_left" style="min-height: 450px">
-                <div>
-                    <div class="photo" style="float: right; margin-right:20px ">photo</div>
-                    <div style="padding: 10px">
-                        <h1 class="teacher_name" style="clear:right">任课老师：杨波</h1>
-                        <p class="intro">职称：教授<br>
-                            学位：博士<br>
-                            所在院系：自动化科学与电气工程学院 检测系<br>
-                            研究方向：面向目标侦测的无线传感器网络研究
-                        </p>
-                    </div>
-
-                </div>
+            <div class="box" style="width:270px;float:right;margin:20px;border-top:white dotted 1px">
+                <h1 class="title">课程内容：</h1>
+                <p class="title_content"> 课程教学内容包括六部分，包括绪论、现代检测系统的基础知识、先进传感器技术、多传感器信息融合、微弱信号检测和软测量技术。</p>
+                <div style="text-align: right;margin-right: 10px"><a href="{% url 'content' %}" style="font-size: 12px"><i>>>>阅读更多</i></a></div>
             </div>
-        </div>
-        <div class="footer">
-            <p style="background-color: aquamarine">版权所有 @copyright </p>
         </div>
     </div>
-</body>
-</html>
+
+{% endblock %}
+

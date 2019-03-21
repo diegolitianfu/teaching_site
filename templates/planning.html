@@ -1,0 +1,22 @@
+{% extends 'layout_base.html' %}
+{% load static from staticfiles %}
+
+{% block content %}
+        <div class="info_detail" style="height:auto;width:740px;margin:20px 30px 20px 30px;">
+            <div class="linian-blue" style="color:darkolivegreen; margin-bottom:5px ">教学安排</div>
+            <div class="right" style="height: 270px;background-color:rgb(210,210,210);margin-bottom:0px">
+                <br>
+                <br>
+                <p class="article_content" style="width: 300px;float: left;margin-left: 50px">
+                    检测技术与自动化装置是控制科学与工程下的二级学科，重点是为了获取信息，获取信息的流程如下图左所示，包
+                    括传感器—信号调理—信号采集—信号处理—信号显示—信号输出等环节。<br><strong>课程总学时：32学时（2学时/周）<br>
+                    总学分：2分</strong>
+                    <br>教材：陶红艳等.传感器与现代检测技术.清华大学出版社.2009（教材）（正在自编教材）
+                </p>
+                <img src="{% static 'planning1.jpg' %}" style="float: right;margin-right: 50px">
+                <img src="{% static 'planning2.jpg' %}" style="float: right">
+            </div>
+        </div>
+
+{% endblock %}
+

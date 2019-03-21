@@ -1,16 +1,41 @@
 {% load static from staticfiles %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cn">
 <head>
+
     <meta charset="UTF-8">
-    <title>test</title>
-    <style>
-        body{
-            background-image: url("stars.png");
-            display:block;
-        }
-    </style>
+    <title>现代检测技术</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
+    <div class="main_bg">
+        <div class="header">
+            <a href="{% url 'home' %}"><img src="{% static 'header.jpg' %}"> </a>
+        </div>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-element"><a href={% url 'home' %}>首页</a></li>
+                <li class="menu-element"><a href={% url 'idea' %}>教学理念</a></li>
+                <li class="menu-element"><a href={% url 'team' %}>教学队伍</a></li>
+                <li class="menu-element"><a href={% url 'planning' %}>教学安排</a></li>
+                <li class="menu-element"><a href={% url 'content' %}>教学内容</a></li>
+                <li class="menu-element"><a href={% url 'resources' %}>教学资源</a></li>
+                <li class="menu-element"><a href={% url 'activities' %}>课程考核</a></li>
+                <li class="menu-element"><a href="{% url 'kejian' %}">下载专区</a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <a href="{% url 'home' %}" title="回到首页">
+                <img src="{% static 'banner1.png' %}">
+            </a>
+        </div>
+        <div class="main">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div class="footer">
+            <p style="background-color: aquamarine">版权所有 @copyright </p>
+        </div>
+    </div>
 </body>
 </html>

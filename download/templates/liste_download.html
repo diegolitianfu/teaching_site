@@ -1,0 +1,19 @@
+{% extends 'layout_base.html' %}
+
+{% block content %}
+        <div class="left_main">
+            <div class="linian">下载专区</div>
+            <ul class="list">
+                <li class="list-element" ><a href="{% url 'kejian' %}">课件下载</a></li>
+                <li class="list-element"><a href="{% url 'lunwen' %}">论文资料</a></li>
+                <li class="list-element"><a href="{% url 'sheji' %}">设计报告</a></li>
+                <li class="list-element"><a href="{% url 'download_qita' %}">其他资料</a></li>
+            </ul>
+        </div>
+        <div class="right_main">
+            {% block download %}
+            {% endblock %}
+        </div>
+
+{% endblock %}
+
